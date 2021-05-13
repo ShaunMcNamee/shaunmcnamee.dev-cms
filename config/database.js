@@ -1,4 +1,6 @@
 const fs = require('fs');
+const parse = require('pg-connection-string').parse;
+const config = parse(process.env.DATABASE_URL);
 
 module.exports = ({ env }) => ({
   defaultConnection: "default",
@@ -6,19 +8,17 @@ module.exports = ({ env }) => ({
     default: {
       connector: "bookshelf",
       settings: {
-        client: env("DATABASE_CLIENT"),
-        host: env("DATABASE_HOST"),
-        port: env.int("DATABASE_PORT"),
-        database: env("DATABASE_NAME"),
-        username: env("DATABASE_USERNAME"),
-        password: env("DATABASE_PASSWORD"),
+        client: 'postgres',
+        host: config.host,
+        port: config.port,
+        database: config.database,
+        username: config.user,
+        password: config.password,
         ssl: {
-          ca: fs.readFileSync(`${__dirname}/ca-certificate-shaunmcnamee-database.crt`).toString(),
+          rejectUnauthorized: false,
         },
       },
-      options: {
-        ssl: true
-      },
+      options: {},
     },
   },
 });
