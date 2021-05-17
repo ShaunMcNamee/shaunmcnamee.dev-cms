@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Content": {
+    "content": {
       "type": "richtext"
     }
   }
