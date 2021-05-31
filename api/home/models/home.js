@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const axios = require('axios')
 /**
@@ -6,15 +6,12 @@ const axios = require('axios')
  * to customize this model
  */
 
-
 module.exports = {
   lifecycles: {
     afterUpdate: async (entry) => {
-      axios.post(process.env.REBUILD_UI_URL)
-        .catch(() => {
-            // Ignore
-          }
-        );
+      axios.post(process.env.REBUILD_UI_URL).catch(() => {
+        // Ignore
+      })
     },
-  }
-};
+  },
+}
