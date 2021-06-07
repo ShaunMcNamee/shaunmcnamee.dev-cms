@@ -9,10 +9,10 @@ const axios = require('axios')
 module.exports = {
   lifecycles: {
     afterUpdate: async (entry) => {
-      await axios.post(process.env.REBUILD_UI_URL).catch(() => {
-        // Ignore
-      })
       if (entry.published_at !== undefined && entry.published_at !== null) {
+        await axios.post(process.env.REBUILD_UI_URL).catch(() => {
+          // Ignore
+        })
         axios
           .post(process.env.NEW_BLOG_POST_HOOK_URL, { ...entry })
           .catch(() => {
