@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "friendsgiving_dates",
+  "info": {
+    "name": "friendsgiving-date"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/friendsgiving-dates",
+      "handler": "friendsgiving-date.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/friendsgiving-dates/count",
+      "handler": "friendsgiving-date.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/friendsgiving-dates/:id",
+      "handler": "friendsgiving-date.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/friendsgiving-dates",
+      "handler": "friendsgiving-date.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/friendsgiving-dates/:id",
+      "handler": "friendsgiving-date.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/friendsgiving-dates/:id",
+      "handler": "friendsgiving-date.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
