@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "pollings",
+  "info": {
+    "name": "Polling"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arePolling": {
+      "type": "boolean"
+    }
+  }
+}

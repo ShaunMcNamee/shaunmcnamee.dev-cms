@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/polling",
+      "handler": "polling.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/polling",
+      "handler": "polling.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/polling",
+      "handler": "polling.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
