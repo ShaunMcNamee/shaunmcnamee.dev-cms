@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "poll_inputs",
+  "info": {
+    "name": "poll-input",
+    "displayName": " Poll Inputs"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "option": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

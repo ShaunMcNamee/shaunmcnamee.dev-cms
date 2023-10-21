@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "poll_options",
+  "info": {
+    "name": "poll-option",
+    "displayName": " Poll Options"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "option": {
+      "type": "string",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "required": false
+    }
+  }
+}

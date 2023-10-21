@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rsvps",
+  "info": {
+    "name": "rsvp",
+    "displayName": " RSVPs"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "adults": {
+      "type": "string",
+      "required": true
+    },
+    "children": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "taking-rsvp",
+  "info": {
+    "name": "Taking RSVP"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "areTakingRsvp": {
+      "type": "boolean"
+    }
+  }
+}

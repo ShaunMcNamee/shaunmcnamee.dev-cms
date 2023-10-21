@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/taking-rsvp",
+      "handler": "taking-rsvp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/taking-rsvp",
+      "handler": "taking-rsvp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/taking-rsvp",
+      "handler": "taking-rsvp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/poll-inputs",
+      "handler": "poll-input.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/poll-inputs/count",
+      "handler": "poll-input.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/poll-inputs/:id",
+      "handler": "poll-input.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/poll-inputs",
+      "handler": "poll-input.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/poll-inputs/:id",
+      "handler": "poll-input.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/poll-inputs/:id",
+      "handler": "poll-input.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

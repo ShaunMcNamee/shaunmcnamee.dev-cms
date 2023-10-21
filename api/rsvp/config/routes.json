@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rsvps",
+      "handler": "rsvp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rsvps/count",
+      "handler": "rsvp.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rsvps/:id",
+      "handler": "rsvp.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rsvps",
+      "handler": "rsvp.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rsvps/:id",
+      "handler": "rsvp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rsvps/:id",
+      "handler": "rsvp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
